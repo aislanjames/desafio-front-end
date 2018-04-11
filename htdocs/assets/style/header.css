@@ -1,0 +1,35 @@
+header {
+	background: #004861;
+	display: block;
+	height: 90px;
+}
+
+.header-section {
+	padding-top: 30px;
+	display: flex;
+	align-items: center;
+}
+
+.logo-header {
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-header-img {
+	padding-right: 30px;
+}
+
+@media only screen and (min-device-width : 992px){
+	.header-section {
+		padding-top: 20px;	
+	}
+	.logo-header {
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto
+	}
+
+	.logo-header-img {
+   		width: auto;
+	}
+}

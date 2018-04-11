@@ -1,0 +1,31 @@
+.menu {
+    cursor: pointer;
+    float: left;
+    position: relative;
+    left: 30px;
+}
+
+.menu .barra1, .barra2, .barra3 {
+    width: 30px;
+    height: 5px;
+    margin: 4px 0;
+    transition: 0.4s;
+    background: #FFFFFF
+}
+
+/* Rotação da barra1 */
+.mudar .barra1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 5px) ;
+    transform: rotate(-45deg) translate(-7px, 5px) ;
+}
+
+/* Desaparecendo com a barra2 */
+.mudar .barra2 {
+    opacity: 0;
+}
+
+/* Rotação da barra3 */
+.mudar .barra3 {
+    -webkit-transform: rotate(45deg) translate(-7px, -7px) ;
+    transform: rotate(45deg) translate(-7px, -7px) ;
+}

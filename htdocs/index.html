@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- TÍTULO DO SITE -->
+	<title>Desafio Front-End</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- IMPORTAÇÕES CSS -->
+	<link rel="stylesheet" href="assets/style/reset.css">
+	<link rel="stylesheet" href="assets/style/style.css">
+	<link rel="stylesheet" href="assets/style/header.css">
+	<link rel="stylesheet" href="assets/style/menu.css">
+	<link rel="stylesheet" href="assets/style/noticias.css">
+	<link rel="stylesheet" href="assets/style/anuncio.css">
+	<link rel="stylesheet" href="assets/style/footer.css">
+</head>
+<body class="body-container">
+	<!-- CABEÇALHO -->
+	<header>
+		<section class="header-section">
+			<!-- MENU -->
+			<nav class="menu">
+				<aside onclick="transicaoMenu(this)">
+					  <div class="barra1"></div>
+					  <div class="barra2"></div>
+					  <div class="barra3"></div>
+				</aside>
+			</nav>
+			<!-- INFOGLOBO -->
+			<a href="assets/media/logo-header.png" class="logo-header">
+				<img src="assets/media/logo-header.png" class="logo-header-img logotipo">
+			</a>
+		</section>
+	</header>
+	
+	<!-- CONTEÚDO DE NOTÍCIAS -->
+	<main>
+		<section class="destaque">
+			<!-- DESTAQUE NOTÍCIAS -->
+			<aside class="destaque-maior container-img noticias">
+				<a href="assets/media/464x261-1.jpeg" class="imagem-destaque">
+					<img src="assets/media/464x261-1.jpeg" class="imagem-destaque-maior"> 
+				</a>
+				<a href="assets/media/464x261-2.jpeg" class="imagem-destaque">
+					<img src="assets/media/464x261-2.jpeg" class="imagem-destaque-maior">
+				</a>
+			</aside>
+			<aside class="destaque-menor">
+				<a href="assets/media/216x216-1.jpeg" class="menor-destaque noticias">
+					<img src="assets/media/216x216-1.jpeg" class="imagem-destaque-menor bloco-noticia">
+				</a>
+				<a href="assets/media/216x216-2.jpeg" class="menor-destaque noticias">
+					<img src="assets/media/216x216-2.jpeg" class="imagem-destaque-menor bloco-noticia">
+				</a>
+			</aside>
+			<aside class="aside-bloco-noticia">
+				<a href="assets/media/216x121-1.jpeg" class="noticias">
+					<img src="assets/media/216x121-1.jpeg" class="bloco-destaque bloco-noticia">
+				</a>
+				<a href="assets/media/216x121-2.jpeg" class="noticias">
+					<img src="assets/media/216x121-2.jpeg" class="bloco-destaque bloco-noticia">
+				</a>
+				<a href="assets/media/216x121-3.jpeg" class="noticias">
+					<img src="assets/media/216x121-3.jpeg" class="bloco-destaque bloco-noticia">
+				</a>
+				<a href="assets/media/216x121-4.jpeg" class="">
+					<img src="assets/media/216x121-4.jpeg" class="bloco-destaque bloco-noticia">
+				</a>
+			</aside>
+		</section>
+
+		<!-- BOTÕES TESTE PARA DATA.JSON -->
+		<section>
+			<button onclick="lerJson()">Carregar JSON</button>
+			<button onclick="limparJson()">Limpar JSON</button>
+			<span id="json"></span>
+		</section>
+
+		<!-- ANÚNCIOS -->
+		<section class="anuncio-section">
+			<object class="anuncio"></object>
+		</section>
+
+		<!-- NOTÍCIAS BRASIL -->
+		<section class="brasil">
+			<aside class="brasil-aside">
+				<a href="assets/media/216x121-8.jpeg" class="noticias">
+					<img src="assets/media/216x121-8.jpeg" class="bloco-noticia">
+				</a>
+				<a href="assets/media/216x121-12.jpeg" class="noticias">
+					<img src="assets/media/216x121-12.jpeg" class="bloco-noticia">
+				</a>
+				<a href="assets/media/216x121-9.jpeg" class="noticias">
+					<img src="assets/media/216x121-9.jpeg" class="bloco-noticia">
+				</a>
+				<a href="assets/media/216x121-11.jpeg" class="noticias">
+					<img src="assets/media/216x121-11.jpeg" class="bloco-noticia">
+				</a>
+				<a href="" id="brasil" class="titulo-noticia fonte">Brasil +</a>
+			</aside>
+			
+		</section>
+
+		<!-- NOTÍCIAS MUNDO -->
+		<section class="mundo">
+			<aside class="mundo-aside">
+				<a href="assets/media/216x121-6.jpeg" id="img" class="noticias">
+					<img src="assets/media/216x121-6.jpeg" id="imagem-mundo" class="bloco-noticia">
+				</a>
+				<a href="assets/media/216x121-10.jpeg" class="noticias">
+					<img src="assets/media/216x121-10.jpeg" class="bloco-noticia">
+				</a>
+				<a href="assets/media/216x121-7.jpeg" class="noticias">
+					<img src="assets/media/216x121-7.jpeg" class="bloco-noticia">
+				</a>
+				<a href="assets/media/216x121-5.jpeg" class="noticias">
+					<img src="assets/media/216x121-5.jpeg" class="bloco-noticia">
+				</a>
+				<a href="" class="titulo-noticia fonte">Mundo +</a>
+			</aside>
+		</section>
+	</main>
+
+	<!-- RODAPÉ -->
+	<footer>
+		<section class="footer-section container">
+			<!-- INFOGLOBO -->
+			<a href="#" class="logo-footer">
+				<img src="assets/media/logo-footer.png" class="logo-footer-img logotipo content-footer">
+			</a>
+			<!-- COPYRIGHT DESKTOP -->
+			<aside class="fonte copyright">
+				<h4>copyright © 2017</h4>
+				<h4>todos os direitos reservados</h4>
+			</aside>
+		</section>
+		<!-- COPYRIGHT MOBILE -->
+		<section class="container footer-copyright">
+			<aside class="fonte  content-container content-footer">
+				<h4>copyright © 2017</h4>
+				<h4>todos os direitos reservados</h4>
+			</aside>
+		</section>
+	</footer>
+
+	<!-- IMPORTAÇÕES JAVASCRIPT -->
+	<script src="assets/script/menu.js"></script>
+	<script src="assets/script/loadJson.js"></script>
+
+</body>
+</html>

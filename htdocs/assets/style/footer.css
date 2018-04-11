@@ -1,0 +1,47 @@
+footer {
+	display: block;
+}
+
+.footer-section {
+	background: #D5E11F;
+}
+
+.footer-copyright {
+	background: #004861;
+	color: #FFFFFF;
+}
+
+.content-footer {
+	padding-top: 40px;
+}
+
+.copyright {
+	display: none;
+}
+
+@media only screen and (min-device-width : 992px){
+	.footer-section {
+		display: flex;
+	    align-items: center;
+	    justify-content: space-between;
+	    font-size: small;
+	}
+
+	.content-footer {
+		padding: 0;
+	}
+
+	.logo-footer-img {
+		margin-left: 70px;
+	}
+
+	.footer-copyright {
+		display: none;
+	}
+
+	#copyright { /* ITEM QUE FICA AO LADO DO LOGO; VERSÃO DESKTOP */
+		display: block;
+		text-align: right;
+		margin-right: 30px;
+	}
+}
